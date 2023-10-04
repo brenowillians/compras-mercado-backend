@@ -1,0 +1,27 @@
+
+###
+POST  http://localhost:6010/ HTTP/1.1
+content-type: application/json
+
+{
+    "descricaoCompra": "refrigerante",
+    "valor": 10
+}
+
+###
+GET  http://localhost:6010/ HTTP/1.1
+
+###
+GET  http://localhost:6010/1 HTTP/1.1
+
+###
+PATCH  http://localhost:6010/3 HTTP/1.1
+content-type: application/json
+
+{
+    "descricaoCompra": "feijão",
+    "valor" : 24
+}
+
+###
+DELETE  http://localhost:6010/999 HTTP/1.1
