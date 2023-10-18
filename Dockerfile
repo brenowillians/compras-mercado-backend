@@ -13,7 +13,7 @@ COPY package*.json ./
 
 ENV NODE_ENV production
 
-RUN yarn
+RUN npm install
 
 COPY . .
 #COPY .env.producao ./.env
