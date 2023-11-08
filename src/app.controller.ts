@@ -10,6 +10,11 @@ import { ComprasMercado } from './entities/compras-mercado.entity';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
+  @Get('alteracao')
+  alteracao() {
+    return "ESSA PORRA TÁ ALTERADA"
+  }
+  
   @ApiCreatedResponse({
     type: ComprasMercado, // aqui definimos o tipo de resposta
   }) 
